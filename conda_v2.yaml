@@ -1,0 +1,17 @@
+name: dino
+channels:
+  - defaults
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.9
+  - cudatoolkit-dev
+  - openmim
+  - pytorch
+  - pytorch-cuda
+  - torchaudio
+  - torchvision
+  - mmcv-full
+  - ipykernel
+  - matplotlib
