@@ -1,3 +1,22 @@
+
+# Installation
+
+The conda.yaml doesn't work for me. Follow these steps to install the dependencies (-y is optional):
+
+```conda env create -f conda_v2.yaml```
+
+Or create a new conda env and run the following:
+
+```conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.7 cudatoolkit-dev=11.7 openmim=0.3.7 -c pytorch -c nvidia -c conda-forge -y```
+
+```mim install mmcv-full==1.5.0 mmsegmentation==0.27.0```
+
+```conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.7 cudatoolkit-dev=11.7 -c pytorch -c nvidia -c conda-forge -y```
+
+```conda install openmim=0.3.7 -c conda-forge -y```
+
+```mim install mmcv-full==1.5.0 mmsegmentation==0.27.0```
+
 :new: [2023-10-26] *Added DINOv2 backbones with registers, following [Vision Transformers Need Registers](https://arxiv.org/abs/2309.16588).*
 
 # DINOv2: Learning Robust Visual Features without Supervision
